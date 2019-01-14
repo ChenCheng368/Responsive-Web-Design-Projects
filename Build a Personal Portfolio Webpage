@@ -1,0 +1,91 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<main>
+  <nav id="navbar" class="navbar">
+    <a class="nav-link" href="#welcome-section">About</a>
+    <a class="nav-link" href="#projects">Work</a>
+    <a class="nav-link" href="#contact">Contact</a>
+  </nav>
+  
+<body class="body">  
+<section id="welcome-section">
+  <h1>Hey i'am Chen Cheng.</h1>
+  <p>a web developer</p> 
+</section>
+
+<section id="projects">
+  <h1 class="project-header">These are some of my projects.</h1>
+  <div class="project-tile">
+    <div class="d1">1
+      <a id="profile-link" href="https://codepen.io/anon/pen/WLyEWN" target="_blank">Tribute Page</a>
+    </div>
+    <div class="d2">2</div>
+    <div class="d3">3</div>
+    <div class="d4">4</div>
+    <div class="d5">5</div>
+    <div class="d5">6</div>
+  </div>
+  
+</section>
+  
+  <section id="contact">
+    <h1>Let's work together...</h1>
+    <p>How do you take your coffee?</p>
+    
+  </section>
+</body>
+</main>
+
+//--------------------------------CSS-----------------------------------------------------------------------
+.project-header{
+  text-align:center;
+}
+.project-tile{
+  font-size: 40px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.navbar {
+    background-color: #0ff;
+    text-align: right;
+}
+.nav-link{
+  color:green;
+}
+nav{
+  position:fixed;
+  top: 0px;
+    height: 50px;
+    width: 99%;
+}
+.body{
+  margin-top:60px;
+}
+@media (max-width: 300px){
+  nav{
+    width: 50%;
+  }
+}
+
+#welcome-section{
+  height:100vh;
+  text-align:center;
+}
+#projects{
+  height:100vh;
+}
+#contact{
+  height:100vh;
+}
